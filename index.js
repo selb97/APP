@@ -1,6 +1,6 @@
 const http = require('http'); // Import the built-in HTTP module
 
-const hostname = '127.0.0.1'; // Localhost
+const hostname = '0.0.0.0'; // Localhost
 const port = 3000; // Port to listen on
 
 // Create a server
