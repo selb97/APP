@@ -1,6 +1,6 @@
 FROM node:latest
 WORKDIR /build
-COPY package*.json .
+COPY package*.json ./
 RUN npm ci
 COPY . . 
 EXPOSE 3000

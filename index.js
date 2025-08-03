@@ -1,19 +1,11 @@
-const http = require('http'); // Import the built-in HTTP module
+const http = require('http');
+const port = 3000;
 
-const hostname = '0.0.0.0'; // Localhost
-const port = 3000; // Port to listen on
-
-// Create a server
 const server = http.createServer((req, res) => {
-  // Set the HTTP header for a successful response and content type
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-
-  // Send the "Hello World!" message as the response body
-  res.end('Hello World!\n');
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.end('<h1>Hello from Node.js behind Nginx!</h1>');
 });
 
-// Start the server and listen for incoming requests
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, '0.0.0.0', () => {
+  console.log(`Server running on port ${port}`);
 });
