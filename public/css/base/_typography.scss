@@ -1,0 +1,46 @@
+/* ==============================
+  0. Imports
+  ============================== */
+
+@use "sass:map";
+@use "../abstracts/index" as *;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Literata:wght@400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* ==============================
+  ============================== */
+
+
+p.header {
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; 
+    color: map.get($text-color, light);
+}
+
+/*  THIS
+    IS
+    A
+    BREAK*/
+
+.text-primary {font-family: $primary-font;}
+.text-primary-navy {color: map.get($brand-color, navy); @extend .text-primary;}
+.text-primary-yellow {color: map.get($brand-color, yellow);@extend .text-primary;}
+.text-primary-pink {color: map.get($brand-color, pink);@extend .text-primary;}
+
+.text-secondary {font-family: $secondary-font;}
+.text-secondary-navy {color: map.get($brand-color, navy); @extend .text-secondary;}
+.text-secondary-yellow {color: map.get($brand-color, yellow);@extend .text-secondary;}
+.text-secondary-pink {color: map.get($brand-color, pink);@extend .text-secondary;}
+
+.text-left {text-align: $text-left;}          /* Align text to the left (default for most elements) */
+.text-center {text-align: $text-center;}      /* Align text to the center */ 
+.text-right {text-align: $text-right;}        /* Align text to the right */
+.text-justify {text-align: $text-justify;}    /* Justify text, stretching lines to align with both margins */

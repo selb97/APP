@@ -1,0 +1,45 @@
+   /* ==============================
+      0. Imports
+      ============================== */
+   @use "sass:map";
+   
+   /* ==============================
+      1. Abstracts (global settings)
+      ============================== */
+
+   @use "./abstracts/functions";
+   @use "./abstracts/index";
+   @use "./abstracts/variables";
+
+   /* ==============================
+      2. Vendors (third-party overrides)
+      ============================== */
+
+   /* ==============================
+      3. Base styles
+      ============================== */
+
+   @use "./base/base";
+   @use "./base/typography";
+
+   /* ==============================
+      4. Layout (page structure)
+      ============================== */
+
+   @use "./layout/header";
+   @use "./layout/wrapper";
+
+   /* ==============================
+      5. Components (UI modules)
+      ============================== */
+   
+   @use "./components/navbar";
+
+   /* ==============================
+      6. Pages (page-specific styles)
+      ============================== */
+
+      /* ==============================
+      7. Themes (optional)
+      ============================== */
+

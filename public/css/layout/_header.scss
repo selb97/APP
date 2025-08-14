@@ -1,0 +1,48 @@
+/* ==============================
+  0. Imports
+  ============================== */
+
+@use "sass:map";
+@use "../abstracts/index" as *;
+
+/* ==============================
+  ============================== */
+
+header {
+    min-width: 100%;
+    min-height: 8.09vh;                             /*  8.09 = 5 x 1.618 (Golden ratio)    */
+    min-height: 8.09svh;
+
+    background-color: map.get($brand-color, navy);
+    
+}
+header .wrapper {
+    width: 83.82svw;
+    min-height: 8.09vh;                             /*  8.09 = 5 x 1.618 (Golden ratio)   */
+    min-height: 8.09svh;
+
+    margin: auto;
+    background: transparent;
+}
+header .wrapper .button {
+    min-height: 8.09svh;
+    width: 16.18svh;
+
+    background: transparent;
+    display: grid;
+    place-items: center;
+    float: left;
+    padding: 0 1rem;
+    font-size: 1rem;
+
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+header .wrapper .button:hover {
+    
+    background-color: map.get($background-color, light);
+    border-color: map.get($background-color, light);
+}
+header .wrapper .button:hover > p.header {
+    color: map.get($brand-color, yellow);
+}

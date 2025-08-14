@@ -1,0 +1,18 @@
+/* ==============================
+  0. Imports
+  ============================== */
+
+@use "sass:map";
+@use "../abstracts/index" as *;
+
+/* ==============================
+  ============================== */
+  
+.wrapper {
+    background-color: map.get($background-color,light);
+
+    margin: auto;
+    width: 83.82svw;                            /*  83.82 = 100 - (10x1.618)    */
+    min-height: 91.91vh;                            /*  91.91 = 100 - 8.09  */
+    min-height: 91.91svh;
+}

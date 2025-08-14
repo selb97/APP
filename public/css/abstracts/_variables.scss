@@ -1,0 +1,45 @@
+//
+// ----------   COLORS  ---------- //
+//
+
+$brand-color: (
+    navy: #1F3B5A,
+    yellow: #F2B705,
+    pink: #E46C8A
+
+);
+$background-color: (
+    light: #F7F5F2,
+    dark: #152536
+);
+$text-color: (
+    main: #152536,
+    light: #F7F5F2,
+    muted: #6E7A8A
+);
+$border-color: (
+    light: #D9D9D9,
+    dark: #2A3E54
+);
+$icon-color: (
+    light: #F7F5F2,
+    dark: #1F3B5A
+);
+$state-color: (
+    success: #4CAF50,
+    warning: #F4A261,
+    error: #E63946
+);
+
+//
+// ----------   FONTS  ---------- //
+//
+
+$primary-font: 'Montserrat';
+$secondary-font: 'Varta';
+
+
+$text-left: left;
+$text-center: center;
+$text-right: right;
+$text-justify: justify;

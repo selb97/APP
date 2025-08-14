@@ -1,0 +1,15 @@
+/* ==============================
+  0. Imports
+  ============================== */
+
+@use "sass:map";
+@use "../abstracts/index" as *;
+
+/* ==============================
+  ============================== */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: map.get($background-color, light);
+}
