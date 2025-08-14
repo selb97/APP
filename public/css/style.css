@@ -14,10 +14,6 @@
   0. Imports
   ============================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Literata:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap");
 /* ==============================
   0. Imports
@@ -158,6 +154,4 @@ header .wrapper .button:hover > p.header {
    ============================== */
 /* ==============================
 7. Themes (optional)
-============================== */
-
-/*# sourceMappingURL=style.css.map */
+============================== *//*# sourceMappingURL=style.css.map */
