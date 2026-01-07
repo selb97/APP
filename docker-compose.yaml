@@ -1,6 +1,9 @@
 services:
   selb-app:
     image: selb-app
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: selb-app-container
     ports:
       - "3000:3000"
