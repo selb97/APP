@@ -1,2 +1,5 @@
-.env
+**/.env
+**/*.env
 backup.sql
+node_modules/
+npm-debug.log*
