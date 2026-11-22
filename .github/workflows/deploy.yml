@@ -1,0 +1,33 @@
+name: Deploy
+
+on:
+  push:
+    branches: [dev, main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, Linux, X64]
+    env:
+      APP_ENV: ${{ github.ref_name == 'main' && 'prod' || 'staging' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Copy code to deploy folder
+        run: |
+          DEST="$HOME/deploy/app-$APP_ENV"
+          mkdir -p "$DEST"
+          rsync -a --delete --exclude .git ./ "$DEST/"
+
+      - name: Pull images, build and start
+        run: |
+          cd "$HOME/deploy/app-$APP_ENV"
+          C="docker compose -p app-$APP_ENV --env-file $HOME/env/$APP_ENV.env"
+          $C pull --ignore-buildable
+          $C up -d --build --remove-orphans
+          $C ps
+          docker image prune -f
