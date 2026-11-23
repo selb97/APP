@@ -29,5 +29,6 @@ jobs:
           C="docker compose -p app-$APP_ENV --env-file $HOME/env/$APP_ENV.env"
           $C pull --ignore-buildable
           $C up -d --build --remove-orphans
+          $C restart nginx
           $C ps
           docker image prune -f
