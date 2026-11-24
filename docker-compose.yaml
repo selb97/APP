@@ -9,6 +9,19 @@ services:
         condition: service_completed_successfully
     environment:
       DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+    develop:
+      watch:
+        - action: sync+restart     # server code: copy in + restart Node
+          path: ./src
+          target: /build/src
+        - action: sync+restart     # views
+          path: ./views
+          target: /build/views  
+        - action: sync             # html/css/browser js: just copy in
+          path: ./public
+          target: /build/public
+        - action: rebuild          # new npm package: rebuild the image
+          path: package.json
 
   migrate:
     image: ghcr.io/amacneil/dbmate:2
