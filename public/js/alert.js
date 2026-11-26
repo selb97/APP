@@ -1,10 +1,17 @@
 'use strict';
 
-alert( 'Hello, world! imma suck yo dik' );
+let arr = new Array();
 
-let message = 'hello ma maan';
+let name1 = prompt("Name: ");
+let name2 = prompt("Name2: ");
 
-alert(message);
+arr.push(name1, name2);
 
-let howufeel = prompt('How are you feeling today?', 100);
-alert(howufeel);
+const list = document.getElementById("name-list");
+
+for (const name of arr) {
+    const li = document.createElement('li');
+    li.textContent = name;
+    list.appendChild(li);
+}
+

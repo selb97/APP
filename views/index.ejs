@@ -1,16 +1,21 @@
 <%- include('partials/head') %>
 <%- include('partials/nav') %>
 
+<script src="js/alert.js" defer></script>
+
 <div class="wrapper">
     <h1 class="text-primary-navy text-center"> VELKOMMEN </h1>
     <h4 class="text-secondary-navy text-center"> Dette er en hjemmeside, velkommen! test</h4>
 
+    <ul id="name-list"></ul>
+    
     <form method="POST" action="/login">
         <label>Brukernavn <input name="username" autocomplete="username" required></label>
         <label>Passord <input name="password" type="password" autocomplete="current-password" required></label>
         <button type="submit">Logg inn</button>
     </form>
 </div>
+
 
         
 <%- include('partials/footer') %>

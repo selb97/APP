@@ -30,15 +30,19 @@ p.header {
     A
     BREAK*/
 
+.text-navy {color: map.get($brand-color, navy); }
+.text-yellow {color: map.get($brand-color, yellow); }
+.text-pink {color: map.get($brand-color, pink); }
+
 .text-primary {font-family: $primary-font;}
-.text-primary-navy {color: map.get($brand-color, navy); @extend .text-primary;}
-.text-primary-yellow {color: map.get($brand-color, yellow);@extend .text-primary;}
-.text-primary-pink {color: map.get($brand-color, pink);@extend .text-primary;}
+.text-primary-navy {@extend .text-navy; @extend .text-primary;}
+.text-primary-yellow {@extend .text-yellow;@extend .text-primary;}
+.text-primary-pink {@extend .text-pink;@extend .text-primary;}
 
 .text-secondary {font-family: $secondary-font;}
-.text-secondary-navy {color: map.get($brand-color, navy); @extend .text-secondary;}
-.text-secondary-yellow {color: map.get($brand-color, yellow);@extend .text-secondary;}
-.text-secondary-pink {color: map.get($brand-color, pink);@extend .text-secondary;}
+.text-secondary-navy {@extend .text-navy; @extend .text-secondary;}
+.text-secondary-yellow {@extend .text-yellow;@extend .text-secondary;}
+.text-secondary-pink {@extend .text-pink;@extend .text-secondary;}
 
 .text-left {text-align: $text-left;}          /* Align text to the left (default for most elements) */
 .text-center {text-align: $text-center;}      /* Align text to the center */ 

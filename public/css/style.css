@@ -39,36 +39,24 @@ p.header {
     IS
     A
     BREAK*/
+.text-navy, .text-secondary-navy, .text-primary-navy {
+  color: #1F3B5A;
+}
+
+.text-yellow, .text-secondary-yellow, .text-primary-yellow {
+  color: #F2B705;
+}
+
+.text-pink, .text-secondary-pink, .text-primary-pink {
+  color: #E46C8A;
+}
+
 .text-primary, .text-primary-pink, .text-primary-yellow, .text-primary-navy {
   font-family: "Montserrat";
 }
 
-.text-primary-navy {
-  color: #1F3B5A;
-}
-
-.text-primary-yellow {
-  color: #F2B705;
-}
-
-.text-primary-pink {
-  color: #E46C8A;
-}
-
 .text-secondary, .text-secondary-pink, .text-secondary-yellow, .text-secondary-navy {
   font-family: "Varta";
-}
-
-.text-secondary-navy {
-  color: #1F3B5A;
-}
-
-.text-secondary-yellow {
-  color: #F2B705;
-}
-
-.text-secondary-pink {
-  color: #E46C8A;
 }
 
 .text-left {
@@ -154,4 +142,6 @@ header .wrapper .button:hover > p.header {
    ============================== */
 /* ==============================
 7. Themes (optional)
-============================== *//*# sourceMappingURL=style.css.map */
+============================== */
+
+/*# sourceMappingURL=style.css.map */
