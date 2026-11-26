@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="../css/style.css" type="text/css" rel="stylesheet">
-    </head>
+<div class="wrapper">
+    <h1 class="text-primary-navy text-center"> VELKOMMEN </h1>
+    <h4 class="text-secondary-navy text-center"> Dette er en hjemmeside, velkommen! test</h4>
 
-    <body>
-        <header> 
-            <div class="wrapper">
-                <div class="button"><p class="header">HJEM</p></div>
-                <div class="button"><p class="header">FoodAPP</p></div>
-                <div class="button"><p class="header">HNDL</p></div> 
-                <div class="button"><p class="header">PLEX</p></div> 
-            </div>
+    <form method="POST" action="/login">
+        <label>Brukernavn <input name="username" autocomplete="username" required></label>
+        <label>Passord <input name="password" type="password" autocomplete="current-password" required></label>
+        <button type="submit">Logg inn</button>
+    </form>
+</div>
 
-        </header>
-        <div class="wrapper">
-            <h1 class="text-primary-navy text-center"> VELKOMMEN </h1>
-            <h4 class="text-secondary-navy text-center"> Dette er en hjemmeside, velkommen!</h4>
-        </div>
-    </body>
-</html>
-
+        
+<%- include('partials/footer') %>
 
 
